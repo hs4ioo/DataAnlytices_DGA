@@ -7,17 +7,17 @@
 
 # ประเภท 
   - ทูเพิล Tuples 
-    x = ("...","...","...")
+    - x = ("...","...","...")
   - list
-    x = [xxx, xxx, xxx]
+    - x = [xxx, xxx, xxx]
   - set
-    x = {xxx, xxx, xxx, xxx}
-    union set
-    x = {1, 2, 3}
-    y = {4, 5, 6}
-    union_show = x.union(y) หรือ union_show = x | Y
+    - x = {xxx, xxx, xxx, xxx}
+    - union set
+      - x = {1, 2, 3}
+      - y = {4, 5, 6}
+      - union_show = x.union(y) หรือ union_show = x | Y
   - dictionaries
-    x = {"name": "banl", "age": 45, } คล้าย Json
+    - x = {"name": "banl", "age": 45, } คล้าย Json
 
 # operators
     - == เท่ากับ
@@ -28,4 +28,4 @@
     - <= น้อยกว่าหรือเท่ากับ
 
 # tip
-  1.23e3 คือ 1.23 X 10 ยกกำลัง 3
+  - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
