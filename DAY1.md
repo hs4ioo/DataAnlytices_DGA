@@ -27,5 +27,21 @@
     - >= มากกว่าหรือเท่ากับ
     - <= น้อยกว่าหรือเท่ากับ
 
+# install lib
+  - in computer
+    - pip install
+    - pip uninstall
+  - in google colab
+    - !pip install
+    - !pip uninstall
+    
+
+# Library
+  - pandas สำหรับอ่านและสำรวจข้อมูลที่มีโครงสร้าง
+  - numpy สำหัรบทำงานกับ array และ คำนวณเชิงตัวเลข
+  - matplotlib / seaborn
+
+# Function
+
 # tip
   - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
