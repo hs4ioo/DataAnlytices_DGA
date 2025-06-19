@@ -45,3 +45,12 @@
 
 # tip
   - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
+  - ดูโครงสร้าง ตาราง โดยไม่รู้ว่ามีอะไรบ้าง select * from sqlite_master Wherer type ='table'
+      import sqlite3
+      conn = sqlite3.connect("exercise.db")
+      cursor = conn.cursor()
+      cursor.execute("select name from sqlite_master where type = 'table';")
+      tables = cursor.fetchall()
+      print("table")
+      for table in tables:
+        print(table[0])
