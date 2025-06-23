@@ -45,10 +45,26 @@
 
 # pandas
   - import pandas as pd
+    
     - load data
       - df = pd.read_csv("")
       - df = pd.read_json("")
       - df = pd.read_excel("", sheet_name='')
+        
+    - Filter | cordition | sql = where
+      - df[['column'] cordition] ex. df[df["saraly"] > 100]
+        
+    - select columns | sql = select form table
+      - df[['column1'], ['column2']
+        
+    - short | sql = orderby select ... form table order by ... desc
+      - df.sort_values(by='column', ascending=False)
+        
+    - group by | sql = select ... from table group by ...
+      - df.groupby('...').size() or .agg()
+        
+    - count rows | sql = select count(...) form table
+      - len(df) or df.shape[0] 
 
 # tip
   - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
