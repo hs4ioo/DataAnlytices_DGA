@@ -43,6 +43,13 @@
 
 # Function
 
+# pandas
+  import pandas as pd
+  ### load data
+  df = pd.read_csv("")
+  df = pd.read_json("")
+  df = pd.read_excel("", sheet_name='')
+
 # tip
   - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
   - ดูโครงสร้าง ตาราง โดยไม่รู้ว่ามีอะไรบ้าง select * from sqlite_master Wherer type ='table'
