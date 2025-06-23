@@ -44,8 +44,8 @@
 # Function
 
 # pandas
-  ## import pandas as pd
-  ### load data
+  - ## import pandas as pd
+  - ### load data
   - df = pd.read_csv("")
   - df = pd.read_json("")
   - df = pd.read_excel("", sheet_name='')
