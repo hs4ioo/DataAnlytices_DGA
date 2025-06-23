@@ -64,11 +64,46 @@
       - df.groupby('...').size() or .agg()
         
     - count rows | sql = select count(...) form table
-      - len(df) or df.shape[0] 
+      - len(df) or df.shape[0]
+     
+    - ค่าเฉลี่ย mean avg | sql = select avg(...) from table
+      - df['...'].mean()
+
+    - sum | sql = select sum(...) from table
+      - df['...'].sum()
+
+    - remove | duplicates | distinct | sql = select distinct ... form table
+      - df.drop_duplicates()  
+
+    - join tables | sql = select * from a join b a.id = b.id
+      - pd.merge(df1, df2, on='id')
+     
+    - create new column | sql = select salary, salary*10 as bonus from table
+      - df['bonus'] = df['saraly']*10
+
+    - rename column | sql = select column as new_colum from table
+      - df.rename(colums={'old': 'new'}, inplace=True)
+     
+    - isnull | sql = depends on DB: use IS NULL, COALESCE()
+      - df.fillna('') or df.droupna()
+
+    - export | sql = usetools or insert into outfiles
+      - df.to_csv('output.csv', index=False)
+      - df.to_excel('output.xlsx', index=False)
+      - df.to_json('output.json')
+      - df.to_sql('table_name', con, if_exists='replace', index=False) (requires a database connection con)
+      - extenion
+          - index=False: This parameter prevents Pandas from writing the DataFrame index as a separate column in the CSV file. If omitted or set to             True, the index will be included.
+          - sep: Specifies the delimiter to use (default is comma ,). For example, sep='\t' for tab-separated values.
+          - header: A boolean (default True) to include or exclude the header row, or a list of strings to specify custom header names.
+          - encoding: Specifies the character encoding (e.g., utf-8).
+          - mode: Specifies the file mode ('w' for write, 'a' for append). Default is 'w', which overwrites the file if it exists.
+    - plot | sql power bi other
+      - df.plot(kind ='bar'), include seaborn, matplotlib 
 
 # tip
   - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
-  - ดูโครงสร้าง ตาราง โดยไม่รู้ว่ามีอะไรบ้าง select * from sqlite_master Wherer type ='table'
+  - ดูโครงสร้าง ตาราง โดยไม่รู้ว่ามีอะไรบ้าง select * from sqlite_master Wherer type ='table'- 
       import sqlite3
       conn = sqlite3.connect("exercise.db")
       cursor = conn.cursor()
