@@ -52,10 +52,10 @@
       - df = pd.read_excel("", sheet_name='')
         
     - Filter | cordition | sql = where
-      - df[['column'] cordition] ex. df[df["saraly"] > 100]
+      - df[['column'] cordition] ex. df[df["saraly"] > 100]]
         
     - select columns | sql = select form table
-      - df[['column1'], ['column2']
+      - df[['column1'], ['column2']]
         
     - short | sql = orderby select ... form table order by ... desc
       - df.sort_values(by='column', ascending=False)
