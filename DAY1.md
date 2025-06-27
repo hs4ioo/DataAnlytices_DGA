@@ -97,9 +97,19 @@
           - sep: Specifies the delimiter to use (default is comma ,). For example, sep='\t' for tab-separated values.
           - header: A boolean (default True) to include or exclude the header row, or a list of strings to specify custom header names.
           - encoding: Specifies the character encoding (e.g., utf-8).
-          - mode: Specifies the file mode ('w' for write, 'a' for append). Default is 'w', which overwrites the file if it exists.
+          - mode: Specifies the file mode ('w' for write, 'a' for append). Def
+          - ault is 'w', which overwrites the file if it exists.
     - plot | sql power bi other
       - df.plot(kind ='bar'), include seaborn, matplotlib 
+
+# analytics
+    - 
+
+# idea
+  - ทำภาพให้ machine เรียน แล้ว บอกว่า ภาพนี้คืออะไร แล้วค่อยไปจับกับคำค้นหา แล้วค่อย ตอบแบบกว้าง เหมือน ค้นหาจากคำ
+    - เช่น ภาพพัดลม ai อ่านว่าและ บอกว่าได้ว่า คือ พัดลม ใช้ คีย์เวิร์ด พัดลม ไปค้นหา จาก text
+   
+    - 
 
 # tip
   - 1.23e3 คือ 1.23 X 10 ยกกำลัง 3
